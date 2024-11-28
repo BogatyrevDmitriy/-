@@ -1,75 +1,252 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Научиться учиться</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Научиться учиться</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #009688;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header p {
+            font-size: 18px;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            padding: 20px;
+        }
+        .description {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+        }
+        .description .left-column {
+            width: 30%;
+            font-weight: bold;
+        }
+        .description .right-column {
+            width: 65%;
+        }
+        .digits {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .digits h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .digits h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .facts {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .fact {
+            width: 45%;
+            margin-bottom: 20px;
+        }
+        .fact strong {
+            font-size: 20px;
+        }
+        .feynman {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .feynman h2 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .feynman p {
+            font-size: 24px;
+        }
+        .kaufman {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .kaufman h2 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        .kaufman h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .kaufman .principles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .kaufman .principle {
+            width: 45%;
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        .footer .section {
+            margin-right: 30px;
+        }
+        .footer .section h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .footer .section a {
+            display: block;
+            margin: 5px 0;
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer .section a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <div class="page">
-    <header class="header">
-      <h1>Научиться учиться</h1>
-      <p>Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни?</p>
-      <div class="header__square-pic"></div> <!-- Площадка для изображения -->
-    </header>
 
-    <main class="content">
-      <section class="description">
-        <h2>Главные проблемы в обучении</h2>
-        <p>Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.</p>
-        <p><strong>Вывод:</strong> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</p>
-        <p>Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
-      </section>
+<header>
+    <h1>Научиться учиться</h1>
+    <p>Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a href="#">Узнать →</a></p>
+</header>
 
-      <section class="digits">
+<div class="content">
+    <section class="description">
+        <div class="left-column">
+            <h2>Главные проблемы в обучении</h2>
+        </div>
+        <div class="right-column">
+            <p>Ни в школе, ни в институте нас не учат тому, как правильно изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит пользы.</p>
+            <p><strong>Вывод:</strong> учиться тоже нужно уметь, но почему-то этому мало где учат. Что с этим делать?</p>
+            <p>Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
+        </div>
+    </section>
+
+    <section class="digits">
         <h2>Цифры и факты</h2>
         <h3>Про учёбу и мозг</h3>
-        <ul>
-          <li><strong>86 миллиардов:</strong> Число нейронов в мозге человека</li>
-          <li><strong>2.1 миллиарда:</strong> Число нуждающихся в повышении квалификации (Всемирный Банк, 2017)</li>
-          <li><strong>1000 терабайт:</strong> Объём памяти человека</li>
-          <li><strong>500 триллионов:</strong> Число ответственных за обучение нервных синапсов у взрослого человека</li>
-          <li><strong>420 миллионов:</strong> Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства (Всемирный Банк, 2017)</li>
-          <li><strong>17–20 лет:</strong> Пик обучаемости</li>
-          <li><strong>1885 год:</strong> Открытие кривой забывания</li>
-          <li><strong>1889 год:</strong> Открытие условного рефлекса</li>
-        </ul>
-      </section>
+        <div class="facts">
+            <div class="fact">
+                <strong>86 миллиардов</strong>
+                <p>Число нейронов в мозге человека</p>
+            </div>
+            <div class="fact">
+                <strong>2.1 миллиарда</strong>
+                <p>Число нуждающихся в повышении квалификации (Всемирный Банк, 2017)</p>
+            </div>
+            <div class="fact">
+                <strong>1000 терабайт</strong>
+                <p>Объём памяти человека</p>
+            </div>
+            <div class="fact">
+                <strong>500 триллионов</strong>
+                <p>Число ответственных за обучение нервных синапсов у взрослого человека</p>
+            </div>
+            <div class="fact">
+                <strong>420 миллионов</strong>
+                <p>Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства (Всемирный Банк, 2017)</p>
+            </div>
+            <div class="fact">
+                <strong>17–20 лет</strong>
+                <p>Пик обучаемости</p>
+            </div>
+            <div class="fact">
+                <strong>1885 год</strong>
+                <p>Открытие кривой забывания</p>
+            </div>
+            <div class="fact">
+                <strong>1889 год</strong>
+                <p>Открытие условного рефлекса</p>
+            </div>
+        </div>
+    </section>
 
-      <section class="feynman">
+    <section class="feynman">
         <h2>Метод Фейнмана</h2>
         <p>Выучить и не забыть.</p>
-      </section>
+    </section>
 
-      <section class="kaufman">
-        <h2>Принципы обучения от Джоша Кауфмана</h2>
-        <ol>
-          <li>Выберите привлекательный проект.</li>
-          <li>Сосредоточьтесь на каком-то одном навыке.</li>
-          <li>Определите целевой уровень мастерства.</li>
-          <li>Разбейте навык на элементы.</li>
-          <li>Приготовьте всё необходимое для занятий.</li>
-          <li>Устраните препятствия для занятий.</li>
-          <li>Выделите специальное время для занятий.</li>
-          <li>Создайте быстрые петли обратной связи.</li>
-          <li>Занимайтесь по расписанию, короткими интенсивными интервалами.</li>
-          <li>Уделяйте внимание количеству и скорости.</li>
-        </ol>
-      </section>
-    </main>
+    <section class="kaufman">
+        <h2>Принципы обучения</h2>
+        <h3>от Джоша Кауфмана</h3>
+        <div class="principles">
+            <div class="principle">
+                <ol>
+                    <li>Выберите привлекательный проект.</li>
+                    <li>Сосредоточьтесь на каком-то одном навыке.</li>
+                    <li>Определите целевой уровень мастерства.</li>
+                </ol>
+            </div>
+            <div class="principle">
+                <ol start="4">
+                    <li>Разбейте навык на элементы.</li>
+                    <li>Приготовьте всё необходимое для занятий.</li>
+                    <li>Устраните препятствия для занятий.</li>
+                    <li>Выделите специальное время для занятий.</li>
+                    <li>Создайте быстрые петли обратной связи.</li>
+                    <li>Занимайтесь по расписанию, короткими интенсивными интервалами.</li>
+                    <li>Уделяйте внимание количеству и скорости.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+</div>
 
-    <footer class="footer">
-      <h3>О Практикуме</h3>
-      <ul>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Концепция</a></li>
-        <li><a href="#">Наставники</a></li>
-        <li><a href="#">Соцсети</a></li>
-      </ul>
-    </footer>
-  </div>
-<script src= "style.css"></script>
-  <script src="script.js"></script>
+<footer class="footer">
+    <div class="section">
+        <h4>О Практикуме</h4>
+        <a href="#">Главная</a>
+        <a href="#">Концепция</a>
+        <a href="#">Наставники</a>
+    </div>
+    <div class="section">
+        <h4>Соцсети</h4>
+        <a href="#">Youtube</a>
+        <a href="#">ВКонтакте</a>
+        <a href="#">TikTok</a>
+    </div>
+</footer>
 </body>
 </html>
+
